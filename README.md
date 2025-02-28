@@ -1,1 +1,1 @@
-Runcode: python mmain.py
+Runcode: python main.py
