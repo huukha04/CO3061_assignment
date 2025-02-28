@@ -78,5 +78,10 @@ class Puzzle:
         print("Time elapsed:", end_time - start_time)
         print("Memory", current)
 
+        from gui import GameGUI
+        
+        self.gui = GameGUI(game) 
+        time.sleep(100)
+
 
             
