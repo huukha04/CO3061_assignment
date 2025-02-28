@@ -77,7 +77,12 @@ class Puzzle:
         print(solution)
         print("Time elapsed:", end_time - start_time)
         print("Memory", current)
-        time.sleep(100)
+        
+
+        print("Chương trình sẽ dừng lại. Nhấn Enter để tiếp tục...")
+                while True:
+                    if input() == "":
+                        break
 
 
             
