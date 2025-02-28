@@ -1,0 +1,4 @@
+tkinter
+random
+time
+tracemalloc
