@@ -1,6 +1,5 @@
 from pipe import Pipe 
 
-import heapq
 
 class Game:
     def __init__(self, grid: list[list[Pipe]]):
@@ -81,7 +80,7 @@ class Game:
             if game.ended():
                 self.gui.update(game)
                 return game
-
+                        
             for y in range(game.rows):
                 for x in range(game.cols):
                     if fixed[y][x]:
@@ -91,7 +90,7 @@ class Game:
                     if not (new_game in visited):
                         stack.append(new_game)
                         visited.add(new_game)
-            self.gui.update(game)
+        self.gui.update(game)
         return None
     
     def _set_guaranteed_pipes(self):

@@ -2,8 +2,7 @@ from pipe import Pipe
 from solve import Game
 import time
 import tracemalloc 
-import matplotlib.pyplot as plt
-import numpy as np
+from gui import GameGUI
 
 class Puzzle:
     def __init__(self, input = None):
@@ -77,12 +76,12 @@ class Puzzle:
         print(solution)
         print("Time elapsed:", end_time - start_time)
         print("Memory", current)
-        
 
         print("Chương trình sẽ dừng lại. Nhấn Enter để tiếp tục...")
-                while True:
-                    if input() == "":
-                        break
+        while True:
+            if input() == "":
+                break
+    
 
 
             
